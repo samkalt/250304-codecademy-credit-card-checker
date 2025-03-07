@@ -41,10 +41,8 @@ function validateCred(array) {
     }
 
     if (sum % 10 === 0) {
-        console.log('valid');
         return true;
     } else {
-        console.log('invalid');
         return false;
     }
 }
@@ -53,7 +51,6 @@ function findInvalidCards(nestedArray) {
     
     let invalidCards = nestedArray.filter(validateCred);
 
-    console.log(invalidCards);
     return invalidCards;
 }
 
@@ -77,8 +74,5 @@ function idInvalidCardCompanies(nestedArray) {
         }
     }
 
-    console.log(companies);
     return companies;
 }
-
-idInvalidCardCompanies(batch)
